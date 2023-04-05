@@ -16,6 +16,11 @@ body{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+ 
+  @media(max-width:425px){
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
 }
 
 .navbar{
@@ -105,6 +110,10 @@ body{
   cursor: pointer;
   z-index: 101;
 
+  @media (max-width: 425px) {
+    display: none;
+  }
+
   button{
     width: 95px;
     height: 35px;
@@ -136,6 +145,10 @@ body{
   text-align: left;
   gap: 4rem;
   padding: 9rem;
+
+  @media (max-width:425px) {
+    padding: 6rem;
+  }
 
   h1{
     font-weight: 700;
@@ -173,6 +186,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media(max-width:425px){
+    order: -1;
+    margin-top: 5rem;
+  }
   
   img{
     height: 650px;
